@@ -329,11 +329,17 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
+  font-weight: 500;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 .hero-footer .btn-contact:hover {
   opacity: 0.9;
+}
+.hero-footer .btn-contact:visited {
+  color: #ffffff;
 }
 
 /* Tablet (768px - 1024px) */
@@ -643,9 +649,14 @@ body {
   cursor: pointer;
   transition: opacity 0.3s ease;
   align-self: flex-start;
+  text-decoration: none;
+  display: inline-block;
 }
 .footer-cta .btn-footer:hover {
   opacity: 0.9;
+}
+.footer-cta .btn-footer:visited {
+  color: #1e212c;
 }
 
 .footer-bottom {

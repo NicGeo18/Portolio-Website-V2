@@ -335,11 +335,18 @@ body {
         border-radius: 16px;
         border: none;
         @include text-base;
+        font-weight: $fw-medium; // Aggiunto per coerenza
         cursor: pointer;
         transition: opacity 0.3s ease;
-
+        text-decoration: none; // Aggiunto per il link
+        display: inline-block; // Aggiunto per il link
+    
         &:hover {
             opacity: 0.9;
+        }
+    
+        &:visited {
+            color: $text-dark; // Mantiene il colore bianco anche dopo il click
         }
     }
 }
@@ -704,9 +711,15 @@ body {
         cursor: pointer;
         transition: opacity 0.3s ease;
         align-self: flex-start;
-
+        text-decoration: none; // Aggiunto per il link
+        display: inline-block; // Aggiunto per il link
+    
         &:hover {
             opacity: 0.9;
+        }
+    
+        &:visited {
+            color: $bg-dark; // Mantiene il colore anche dopo il click
         }
     }
 }
