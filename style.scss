@@ -711,15 +711,15 @@ body {
         cursor: pointer;
         transition: opacity 0.3s ease;
         align-self: flex-start;
-        text-decoration: none; // Aggiunto per il link
-        display: inline-block; // Aggiunto per il link
+        text-decoration: none;
+        display: inline-block;
     
         &:hover {
             opacity: 0.9;
         }
     
         &:visited {
-            color: $bg-dark; // Mantiene il colore anche dopo il click
+            color: $bg-dark;
         }
     }
 }
@@ -784,7 +784,7 @@ body {
         img {
             width: 36px;
             height: 36px;
-            filter: brightness(0) invert(1); // Rende le icone bianche
+            filter: brightness(0) invert(1);
         }
     }
 }
@@ -866,12 +866,16 @@ body {
         cursor: pointer;
         transition: opacity 0.3s ease;
         white-space: nowrap;
-        width: 180px; // Example: set your fixed width here
+        width: 180px; 
         flex: 0 0 180px;
         justify-content: center;
 
         &:hover {
             opacity: 0.9;
+        }
+
+        &:visited {
+            color: $text-dark;
         }
     
         svg {
@@ -952,7 +956,6 @@ body {
             font-size: $fs-h5;
         }
     
-        // On mobile stack tags and btn, but not full btn width
         .project-meta {
             flex-direction: column;
             align-items: stretch;
@@ -1603,15 +1606,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    align-items: stretch; /* Cambiato da start a stretch */
+    align-items: stretch;
 }
 
 /* Left Side - Image */
 
 .contact-image {
     width: 100%;
-    height: 100%; /* Cambiato da altezza fissa a 100% */
-    min-height: 600px; /* Altezza minima per evitare che sia troppo piccola */
+    height: 100%; 
+    min-height: 600px; 
     border-radius: 24px;
     overflow: hidden;
     background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8f 100%);
